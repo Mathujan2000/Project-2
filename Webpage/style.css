@@ -1,0 +1,58 @@
+body{
+    background-color: aqua;
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1fr 1fr 0.4fr ;
+    grid-template-areas: 
+    "header header header"
+    "nav calltoaction1 calltoaction2"
+    "nav nieuwsbericht1 nieuwsbericht2"
+    "footer footer footer";
+}
+
+header{
+    display: grid;
+    grid-area: header;
+    background-color: brown;
+}
+
+nav{
+    display: grid;
+    grid-area: nav;
+    background-color: crimson;
+}
+
+#calltoaction1{
+    display: grid;
+    grid-area: calltoaction1;
+    background-color: tomato;
+}
+
+#calltoaction2{
+    display: grid;
+    grid-area: calltoaction2;
+    background-color: tomato;
+}
+
+#nieuwsbericht1{
+    display: grid;
+    grid-area: nieuwsbericht1;
+    background-color: red;
+}
+
+#nieuwsbericht2{
+    display: grid;
+    grid-area: nieuwsbericht2;
+    background-color: red;
+} 
+
+footer{
+    display: grid;
+    grid-area: footer;
+    background-color:saddlebrown
+}
