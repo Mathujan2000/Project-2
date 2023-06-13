@@ -22,6 +22,10 @@
             CA1
             <div id="leden">
             <img src="..//Webpage/images/meedoen.jpg" alt="meedoen" class="meedoenfoto">
+            <div id="ledentekst">
+
+        <h3> Schrijf je hier bij ons in!</h3>
+            </div>
             </div>
         </div>
         <div id="calltoaction2">
