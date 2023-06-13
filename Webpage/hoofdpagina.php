@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Partij</title>
 </head>
 <body>
@@ -11,11 +12,15 @@
         <header>
             HEADER
         </header>
+        <div id="logo"> 
+            <img src="/Project 2/pvda.png" alt="logo" class="partijlogo">
+            </div>
         <nav>
             NAV
         </nav>
         <div id="calltoaction1">
             CA1
+
         </div>
         <div id="calltoaction2">
             CA2
