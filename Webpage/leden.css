@@ -28,13 +28,11 @@ footer {
 }
 
 .partijlogo {
-    object-fit: cover;
-    width: 300xp;
-    height: 300px;
-    max-width: 100%;
+    width: 12vw;
+    height: 8.5vh;
 }
 
-#logo{
+#logo {
     display: grid;
     grid-area: logo;
     align-items: center;
