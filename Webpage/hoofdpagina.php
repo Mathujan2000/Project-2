@@ -20,10 +20,10 @@
         </nav>
         <div id="calltoaction1">
             CA1
-            <div id="ledentekst">
+        <div id="ledentekst">
 
-<h3> Schrijf je hier bij ons in!</h3>
-    </div>
+        <h3> Schrijf je hier bij ons in!</h3>
+     </div>
             <div id="leden">
             <img src="..//Webpage/images/meedoen.jpg" alt="meedoen" class="meedoenfoto">
             </div>

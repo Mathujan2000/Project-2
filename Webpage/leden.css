@@ -1,0 +1,51 @@
+.containerleden {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-rows: 0.4fr 1fr 0.4fr;
+    grid-template-areas:
+        "logo header header"
+        "nav leden leden"
+        "footer footer footer";
+}
+
+header {
+    display: grid;
+    grid-area: header;
+    background-color: white;
+}
+
+nav {
+    display: grid;
+    grid-area: nav;
+    background-color: crimson;
+}   
+
+footer {
+    display: grid;
+    grid-area: footer;
+    background-color: gray;
+}
+
+.partijlogo {
+    width: 10vw;
+    height: 8.5vh;
+}
+
+#logo{
+    display: grid;
+    grid-area: logo;
+    align-items: center;
+}
+
+.containerleed{
+    display: flex;
+    justify-content: space-between;
+}
+
+#imgleden{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+}

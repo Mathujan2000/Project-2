@@ -19,7 +19,6 @@ body {
 header {
     display: grid;
     grid-area: header;
-    /* background-color: brown; */
     background-color: white;
 }
 
@@ -56,10 +55,8 @@ nav {
 footer {
     display: grid;
     grid-area: footer;
-    /* background-color:saddlebrown */
     background-color: gray;
 }
-
 
 
 .partijlogo {
