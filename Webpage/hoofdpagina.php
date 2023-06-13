@@ -30,44 +30,23 @@
 
         </nav>
         <div id="calltoaction1">
-<<<<<<< HEAD
-            CA1
-        <div id="ledentekst">
-
-        <h3> Schrijf je hier bij ons in!</h3>
-     </div>
+        
+                <h1> Schrijf je hier bij ons in!</h1>
             <div id="leden">
-            <img src="..//Webpage/images/meedoen.jpg" alt="meedoen" class="meedoenfoto">
+                <img src="..//Webpage/images/meedoen.jpg" alt="meedoen" class="cafoto">
             </div>
         </div>
         <div id="calltoaction2">
-            <div id="h1ca2">
-                <h1>
-                    BEKIJK ONZE LEDEN
+            <div id="ca2">
+               
+            <h1> Bekijk onze leden!</h1>
+                    <div class="foto">
+                        <img src="../Webpage/images/leden.jpg" alt="leden" class="cafoto2">
+                    </div>
+
                 </h1>
             </div>
-            
-=======
 
-            <div id="ledentekst">
-                <div class="text-container">
-                    <h1> Schrijf je hier bij ons in!</h1>
-                </div>
-                <div id="leden">
-                    <img src="..//Webpage/images/meedoen.jpg" alt="meedoen" class="cafoto">
-                </div>
-            </div>
-        </div>
-        <div id="calltoaction2">
-            <div id="ledentekst2">
-                <div class="text-container2">
-                    <h1> Bekijk hier onze leden! <a href="leden.php"></a></h1>
-                </div>
-                <div id="leden2">
-                    <img src="..//Webpage/images/leden.jpg" alt="meedoen" class="cafoto">
-                </div>
-            </div>
->>>>>>> ae098b3a606c106ed7e3338a5eb2e8e04facfd2f
         </div>
         <div id="nieuwsbericht1">
 

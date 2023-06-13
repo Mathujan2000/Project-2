@@ -19,13 +19,11 @@ body {
 header {
     display: grid;
     grid-area: header;
-<<<<<<< HEAD
+
     background-color: white;
-=======
-    /* background-color: brown; */
- 
+
+
     text-align: center;
->>>>>>> ae098b3a606c106ed7e3338a5eb2e8e04facfd2f
 }
 
 nav {
@@ -79,11 +77,22 @@ footer {
 }
 
 .cafoto {
-    height: 350px;
+    height: 50vh;
     width: 100%;
     z-index: -1;
+    object-fit: cover;
 
 }
+
+.cafoto2 {
+    height: 50vh;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+
+
+}
+
 
 .text-container {
     background-color: rgba(255, 255, 255, 0.8);
@@ -104,8 +113,6 @@ footer {
     font-weight: bold;
 }
 
-#nieuwsbericht1 {
-width: 100%;
-height: 100%;
-}
+
+
 
