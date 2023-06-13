@@ -23,7 +23,12 @@
 
         </div>
         <div id="calltoaction2">
-            CA2
+            <div id="h1ca2">
+                <h1>
+                    BEKIJK ONZE LEDEN
+                </h1>
+            </div>
+            
         </div>
         <div id="nieuwsbericht1">
             NB1
