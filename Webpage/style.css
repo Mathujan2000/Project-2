@@ -73,6 +73,6 @@ footer {
     align-items: center;
 }
 .meedoenfoto {
-    height: 40vh;
-    width: 50vw;
+    height: 100%;
+    width: 100%;
 }
