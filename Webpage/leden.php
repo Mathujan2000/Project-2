@@ -17,7 +17,7 @@ $dbHandler = new dbHandler();
         </header>
         <div id="logo"> 
             <img src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo">
-            </div>
+        </div>
         <nav>
             NAV
         </nav>

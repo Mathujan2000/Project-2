@@ -30,7 +30,6 @@
 
         </nav>
         <div id="calltoaction1">
-<<<<<<< HEAD
             CA1
         <div id="ledentekst">
 
@@ -47,7 +46,6 @@
                 </h1>
             </div>
             
-=======
 
             <div id="ledentekst">
                 <div class="text-container">
@@ -67,7 +65,6 @@
                     <img src="..//Webpage/images/leden.jpg" alt="meedoen" class="cafoto">
                 </div>
             </div>
->>>>>>> ae098b3a606c106ed7e3338a5eb2e8e04facfd2f
         </div>
         <div id="nieuwsbericht1">
 

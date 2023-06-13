@@ -28,8 +28,10 @@ footer {
 }
 
 .partijlogo {
-    width: 10vw;
-    height: 8.5vh;
+    object-fit: cover;
+    width: 300xp;
+    height: 300px;
+    max-width: 100%;
 }
 
 #logo{

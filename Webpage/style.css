@@ -19,13 +19,7 @@ body {
 header {
     display: grid;
     grid-area: header;
-<<<<<<< HEAD
     background-color: white;
-=======
-    /* background-color: brown; */
- 
-    text-align: center;
->>>>>>> ae098b3a606c106ed7e3338a5eb2e8e04facfd2f
 }
 
 nav {
@@ -78,12 +72,13 @@ footer {
     align-items: center;
 }
 
-.cafoto {
-    height: 350px;
+#img1 {
+    object-fit: cover;
     width: 100%;
-    z-index: -1;
-
+    height: 100%;
+    max-width: 100%;
 }
+
 
 .text-container {
     background-color: rgba(255, 255, 255, 0.8);
