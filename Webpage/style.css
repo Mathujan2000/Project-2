@@ -19,37 +19,44 @@ body {
 header {
     display: grid;
     grid-area: header;
+<<<<<<< HEAD
     background-color: white;
+=======
+    /* background-color: brown; */
+ 
+    text-align: center;
+>>>>>>> ae098b3a606c106ed7e3338a5eb2e8e04facfd2f
 }
 
 nav {
     display: grid;
     grid-area: nav;
-    background-color: crimson;
-}   
+    justify-content: start;
+    
+}
 
 #calltoaction1 {
     display: grid;
     grid-area: calltoaction1;
-    background-color: tomato;
+ 
 }
 
 #calltoaction2 {
     display: grid;
     grid-area: calltoaction2;
-    background-color: tomato;
+
 }
 
 #nieuwsbericht1 {
     display: grid;
     grid-area: nieuwsbericht1;
-    background-color: red;
+ 
 }
 
 #nieuwsbericht2 {
     display: grid;
     grid-area: nieuwsbericht2;
-    background-color: red;
+  
 }
 
 footer {
@@ -60,16 +67,45 @@ footer {
 
 
 .partijlogo {
-    width: 10vw;
+    width: 12vw;
     height: 8.5vh;
 }
 
-#logo{
+
+#logo {
     display: grid;
     grid-area: logo;
     align-items: center;
 }
-.meedoenfoto {
-    height: 100%;
+
+.cafoto {
+    height: 350px;
     width: 100%;
+    z-index: -1;
+
 }
+
+.text-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+.text-container2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#nieuwsbericht1 {
+width: 100%;
+height: 100%;
+}
+
