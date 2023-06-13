@@ -72,3 +72,7 @@ footer {
     grid-area: logo;
     align-items: center;
 }
+.meedoenfoto {
+    height: 45vh;
+    width: 50vw;
+}

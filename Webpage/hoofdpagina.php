@@ -13,14 +13,16 @@
             HEADER
         </header>
         <div id="logo"> 
-            <img src="/Project 2/pvda.png" alt="logo" class="partijlogo">
+            <img src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo">
             </div>
         <nav>
             NAV
         </nav>
         <div id="calltoaction1">
             CA1
-
+            <div id="leden">
+            <img src="..//Webpage/images/meedoen.jpg" alt="meedoen" class="meedoenfoto">
+            </div>
         </div>
         <div id="calltoaction2">
             CA2
