@@ -10,10 +10,10 @@ $dbHandler = new dbHandler();
     <link rel="stylesheet" href="leden.css">
     <title>Document</title>
 </head>
-<body class="ledenpage">
+<body class="standpuntpage">
     <div class="containerleden">
         <header>
-        <h1>Leden Pagina</h1>
+        <h1>Standpunt Pagina</h1>
         </header>
         <div id="logo"> 
             <img src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo">
@@ -31,8 +31,8 @@ $dbHandler = new dbHandler();
             foreach ($leden as $leed) {
         ?>
             <div id="leden">
-                <h2><?= $leed['naam']?></h2>
-                <img id="imgleden" src="images/<?= $leed['naam']?>.png" alt="imgclass">
+                <h2><?= $leed['standpunt']?></h2>
+                <img id="imgleden" src="images/<?= $leed['standpunt']?>.png" alt="imgclass">
             </div>
         <?php
             }

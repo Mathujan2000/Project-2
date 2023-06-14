@@ -40,7 +40,6 @@ h1{
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-template-rows: 20% 80%;
 }
 
 #imagecontainer{
@@ -139,3 +138,88 @@ h1{
     text-align: center;
     color: red;
   }
+
+  /* Styles for tablets */
+@media only screen and (max-width: 800px) {
+    body {
+      /* Tablet-specific styles for body */
+      background-color: lightblue;
+    }
+  
+    .container {
+      /* Tablet-specific styles for container */
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+    }
+  
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+      /* Tablet-specific styles for body */
+      background-color: lightblue;
+    }
+  
+    .container {
+      /* Tablet-specific styles for container */
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "logo header"
+      "nav main1"
+      "nav main2"
+      "nav main3"
+      "nav main4"
+      "nav footer";
+      
+    }
+
+    #logo {
+        display: grid;
+        grid-area: logo;
+        align-items: center;
+    }
+
+    header {
+        display: grid;
+        grid-area: header;
+        text-align: center;
+        color: red;
+    }   
+    
+    nav {
+        display: grid;
+        grid-area: nav;
+        width: 100%;   
+    }
+
+    #calltoaction1 {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-area: main1;
+      }
+
+    #calltoaction2{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-area: main2;
+    }
+
+    #imagecontainer{
+        display: grid;
+        grid-area: main3;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #logo {
+        display: grid;
+        grid-area: logo;
+        align-items: center;
+        justify-items: center;
+    }
+      
+}

@@ -27,7 +27,21 @@
             <div id="nieuwsbericht">
             <h3>Werk moet écht lonen</h3>
             <p>We vinden dat werk meer moet opleveren dan het eigen vermogen.</p>
+            </div>
         </div>
+        <div>
+            <a href="nieuws.php"><img src="../Webpage/images/nb2.jpg" alt="nb" class="nb2"></a>
+            <div id="nieuwsbericht1">
+            <h3>Het openbaar vervoer</h3>
+            <p>We vinden dat het ov beter moet!.</p>
+            </div>
+        </div>
+        <div>
+            <a href="nieuws.php"><img src="../Webpage/images/nb2.jpg" alt="nb" class="nb2"></a>
+            <div id="nieuwsbericht1">
+            <h3>Het openbaar vervoer</h3>
+            <p>We vinden dat het ov beter moet!.</p>
+            </div>
         </div>
         <div>
             <a href="nieuws.php"><img src="../Webpage/images/nb2.jpg" alt="nb" class="nb2"></a>
@@ -35,8 +49,6 @@
             <h3>Het openbaar vervoer</h3>
             <p>We vinden dat het ov beter moet!.</p>
         </div>
-        </div>
-
     <footer>
 
     </footer>
