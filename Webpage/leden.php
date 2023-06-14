@@ -13,7 +13,7 @@ $dbHandler = new dbHandler();
 <body>
     <div class="containerleden">
         <header>
-            HEADER
+      
         </header>
         <div id="logo"> 
             <img src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo">
