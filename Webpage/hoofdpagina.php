@@ -1,3 +1,9 @@
+<?php
+include "./dbHandler.php";
+$db = new DbHandler();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +23,6 @@
         </header>
         <div id="logo">
             <img src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo">
-
         </div>
         <nav>
             <div class="sidenav">

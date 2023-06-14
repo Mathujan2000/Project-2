@@ -13,13 +13,17 @@ $dbHandler = new dbHandler();
 <body>
     <div class="containerleden">
         <header>
-      
+        <h1>Leden Pagina</h1>
         </header>
         <div id="logo"> 
             <img src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo">
         </div>
         <nav>
-            NAV
+            <ul>
+                <li class="menu"><a href="hoofdpagina.php">Home</a></li>
+                <li class="menu"><a href="#">Nieuws</a></li>
+                <li class="menu"><a href="#">Leden</a></li>
+            </ul>
         </nav>
         <div class="containerleed">
         <?php
