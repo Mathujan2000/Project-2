@@ -26,7 +26,6 @@
     <article>
 
     <div id="nieuwsartikelt1">
-            <img src="../Webpage/images/nb1.jpg" alt="nb" class="nb1">
             <h3>Werk moet écht lonen</h3>
             <p>We vinden dat werk meer moet opleveren dan het eigen vermogen.</p>
         </div>
