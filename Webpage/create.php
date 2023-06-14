@@ -24,11 +24,11 @@ if(isset($_POST["create"])){
             <img src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo">
         </div>
         <nav>
-            <ul>
-                <li class="menu"><a href="hoofdpagina.php">Home</a></li>
-                <li class="menu"><a href="#">Nieuws</a></li>
-                <li class="menu"><a href="#">Leden</a></li>
-            </ul>
+            <div class="sidenav">
+                <a href="hoofdpagina.php">Home</a>
+                <a href="nieuws.php">Nieuws</a>
+                <a href="leden.php">Leden</a>
+            </div>
         </nav>
         <div class="create">
          <form method="POST" action="create.php">

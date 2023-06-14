@@ -25,10 +25,7 @@
 
     <article>
 
-    <div id="nieuwsartikelt1">
-            <h3>Werk moet écht lonen</h3>
-            <p>We vinden dat werk meer moet opleveren dan het eigen vermogen.</p>
-        </div>
+
     </article>
 
     <?php
@@ -37,7 +34,7 @@
         [
             'image' => "../Webpage/images/nb1.jpg",
             'title' => 'Artikel 1',
-            'content' => 'Dit is een nieuwsartikel.'
+            'content' => 'Werk moet écht lonen.'
         ],
         [
             'image' => "../Webpage/images/nb2.jpg",
