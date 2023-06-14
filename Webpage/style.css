@@ -49,8 +49,6 @@ h1{
     grid-template-columns: 1fr 1fr;
 }
 
-
-
 #nieuwscontainer {
     display: flex;
     grid-area: nieuwsbericht;
@@ -66,7 +64,6 @@ h1{
  
 
 }
-
 
 .partijlogo {
     width: 15vw;

@@ -32,16 +32,16 @@ $db = new DbHandler();
             </div>
         </nav>
         <div id="calltoaction1">
-
-            <h1>Schrijf je hier bij ons in!</h1>
-            <img src="..//Webpage/images/meedoen.jpg" alt="meedoen" class="cafoto">
+            <h1><a href="create.php">Schrijf je hier bij ons in!</a></h1>
+            <a href="create.php">
+                <img src="..//Webpage/images/meedoen.jpg" alt="meedoen" class="cafoto">
+            </a>
         </div>
         <div id="calltoaction2">
             <h1><a href="leden.php">Bekijk hier onze leden!</a></h1>
             <a href="leden.php"><img src="../Webpage/images/leden.jpg" alt="leden" class="cafoto2"></a>
-        </div>
-
-    <div id="imagecontainer">
+            </div>
+        <div id="imagecontainer">
         <div>
             <a href="nieuws.php"><img src="../Webpage/images/nb1.jpg" alt="nb" class="nb1"></a>
             <div id="nieuwsbericht">
