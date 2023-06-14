@@ -57,16 +57,12 @@ $db = new DbHandler();
         </div>
         </div>
     </div>
-
-
     <footer class="footer">
         FOOTER
     </footer>
     </div>
 
     </div>
-
-
 </body>
 
 </html>

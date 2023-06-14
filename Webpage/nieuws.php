@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+<div class="container">
     <header>
         <h1> Nieuwsoverzicht</h1>
 
@@ -22,40 +22,25 @@
             <a href="leden.php">Leden</a>
         </div>
     </nav>
+        <div>
+            <a href="nieuws.php"><img src="../Webpage/images/nb1.jpg" alt="nb" class="nb1"></a>
+            <div id="nieuwsbericht">
+            <h3>Werk moet écht lonen</h3>
+            <p>We vinden dat werk meer moet opleveren dan het eigen vermogen.</p>
+        </div>
+        </div>
+        <div>
+            <a href="nieuws.php"><img src="../Webpage/images/nb2.jpg" alt="nb" class="nb2"></a>
+            <div id="nieuwsbericht1">
+            <h3>Het openbaar vervoer</h3>
+            <p>We vinden dat het ov beter moet!.</p>
+        </div>
+        </div>
 
-    <article>
-
-
-    </article>
-
-    <?php
-
-    $artikels = [
-        [
-            'image' => "../Webpage/images/nb1.jpg",
-            'title' => 'Artikel 1',
-            'content' => 'Werk moet écht lonen.'
-        ],
-        [
-            'image' => "../Webpage/images/nb2.jpg",
-            'title' => 'Artikel 2',
-            'content' => 'Dit is een nieuwsartikel.'
-        ],
-    ];
-
-    foreach ($artikels as $artikel) {
-
-        echo '<img src="' . $artikel['image'] . '" alt="' . $artikel['title'] . '">';
-        echo '<h2>' . $artikel['title'] . '</h2>';
-        echo '<p>' . $artikel['content'] . '</p>';
-        echo '</div>';
-    }
-    ?>
-    </div>
     <footer>
 
     </footer>
-
+</div>
 </body>
 
 </html>
