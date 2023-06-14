@@ -12,7 +12,8 @@
 header {
     display: grid;
     grid-area: header;
-    background-color: white;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
@@ -48,4 +49,14 @@ footer {
     width: 300px;
     height: 300px;
     max-width: 100%;
+}
+
+.create{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+body.createpage{
+    background-color: mistyrose;
 }

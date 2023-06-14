@@ -1,3 +1,9 @@
+<?php
+include "./dbHandler.php";
+$db = new DbHandler();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,35 +22,28 @@
         </header>
         <div id="logo">
             <img src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo">
-
         </div>
-
-
         <nav>
-
             <ul>
                 <li class="menu"><a href="hoofdpagina.php">Home</a></li>
                 <li class="menu"><a href="#">Nieuws</a></li>
                 <li class="menu"><a href="#">Leden</a></li>
             </ul>
-
         </nav>
         <div id="calltoaction1">
-        
-                <h1> Schrijf je hier bij ons in!</h1>
+            <h1> Schrijf je hier bij ons in!</h1>
             <div id="leden">
+                <a href="create.php">
                 <img src="..//Webpage/images/meedoen.jpg" alt="meedoen" class="cafoto">
+                </a>
             </div>
         </div>
         <div id="calltoaction2">
             <div id="ca2">
-               
             <h1> Bekijk onze leden!</h1>
-                    <div class="foto">
-                        <img src="../Webpage/images/leden.jpg" alt="leden" class="cafoto2">
-                    </div>
-
-                </h1>
+                <div class="foto">                  
+                         <img src="../Webpage/images/leden.jpg" alt="leden" class="cafoto2">
+                </div>
             </div>
         </div>
         <div id="nieuwsbericht1">
@@ -53,6 +52,7 @@
         <div id="nieuwsbericht2">
 
         </div>
+
         <footer>
 
         </footer>

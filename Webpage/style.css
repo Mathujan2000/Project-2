@@ -1,7 +1,8 @@
 body {
     background-color: white;
     height: 100vh;
-
+    background-image: url(./images/background.jpg);
+    background-size: cover;
 }
 
 .container {
@@ -19,11 +20,8 @@ body {
 header {
     display: grid;
     grid-area: header;
-
-    background-color: white;
-
-
     text-align: center;
+    color: red;
 }
 
 nav {
@@ -37,6 +35,10 @@ nav {
     display: grid;
     grid-area: calltoaction1;
  
+}
+
+h1{
+    text-align: center;
 }
 
 #calltoaction2 {
