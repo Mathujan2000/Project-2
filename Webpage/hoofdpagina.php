@@ -50,7 +50,7 @@ $db = new DbHandler();
         <div>
             <a href="nieuws.php"><img src="../Webpage/images/nb2.jpg" alt="nb" class="nb2"></a>
             <div id="nieuwsbericht1">
-            <h3>Het openbaar vervoer</h3>
+            <h3>Een bieb in de buurt nu wettelijk een recht</h3>
             <p>We vinden dat het ov beter moet!.</p>
         </div>
         </div>
