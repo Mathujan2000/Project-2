@@ -46,14 +46,14 @@ $db = new DbHandler();
             <div>
                 <a href="nieuws.php"><img src="../Webpage/images/nb1.jpg" alt="nb" class="nb1"></a>
                 <div id="nieuwsbericht">
-                    <h3>Werk moet écht lonen</h3>
+                    <h3>Een fijne baan, plezier hebben met je collega’s en een bijdrage kunnen leveren.</h3>
                     <p>We vinden dat werk meer moet opleveren dan het eigen vermogen.</p>
                 </div>
             </div>
             <div>
                 <a href="nieuws.php"><img src="../Webpage/images/nb2.jpg" alt="nb" class="nb2"></a>
                 <div id="nieuwsbericht1">
-                    <h3>Een bieb in de buurt nu wettelijk een recht</h3>
+                    <h3>Goed en betaalbaar openbaar vervoer in héél Nederland</h3>
                     <p>We vinden dat het ov beter moet!.</p>
                 </div>
             </div>
