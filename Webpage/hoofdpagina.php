@@ -12,7 +12,7 @@ $db = new DbHandler();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Partij</title>
+    <title>hoofdpagina</title>
 </head>
 
 <body>
@@ -30,7 +30,7 @@ $db = new DbHandler();
                 <a href="nieuws.php">Nieuws</a>
                 <a href="leden.php">Leden</a>
                 <a href="create.php">Inschrijven</a>
-                <a href="standpunten.php">Standpunten</a>
+                <a href="standpunt.php">Standpunten</a>
 
             </div>
         </nav>
@@ -41,33 +41,33 @@ $db = new DbHandler();
         <div id="calltoaction2">
             <h1><a href="leden.php">Bekijk hier onze leden!</a></h1>
             <a href="leden.php"><img src="../Webpage/images/leden.jpg" alt="leden" class="cafoto2"></a>
-            </div>
+        </div>
         <div id="imagecontainer">
-        <div>
-            <a href="nieuws.php"><img src="../Webpage/images/nb1.jpg" alt="nb" class="nb1"></a>
-            <div id="nieuwsbericht">
-            <h3>Werk moet écht lonen</h3>
-            <p>We vinden dat werk meer moet opleveren dan het eigen vermogen.</p>
+            <div>
+                <a href="nieuws.php"><img src="../Webpage/images/nb1.jpg" alt="nb" class="nb1"></a>
+                <div id="nieuwsbericht">
+                    <h3>Werk moet écht lonen</h3>
+                    <p>We vinden dat werk meer moet opleveren dan het eigen vermogen.</p>
+                </div>
+            </div>
+            <div>
+                <a href="nieuws.php"><img src="../Webpage/images/nb2.jpg" alt="nb" class="nb2"></a>
+                <div id="nieuwsbericht1">
+                    <h3>Een bieb in de buurt nu wettelijk een recht</h3>
+                    <p>We vinden dat het ov beter moet!.</p>
+                </div>
+            </div>
         </div>
-        </div>
-        <div>
-            <a href="nieuws.php"><img src="../Webpage/images/nb2.jpg" alt="nb" class="nb2"></a>
-            <div id="nieuwsbericht1">
-            <h3>Een bieb in de buurt nu wettelijk een recht</h3>
-            <p>We vinden dat het ov beter moet!.</p>
-        </div>
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="iconcontainer"> 
-    <a href="https://www.facebook.com/PartijvandeArbeid/?locale=nl_NL" class="fa fa-facebook"></a>
-    <a href="https://twitter.com/PvdA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
-    <a href="mailto:ledenadministratie@pvda.nl." class="fa fa-google"></a>
-    </div>
-    <p class="copyright">Copyright © 2023 PvdA</p>
-    <a href="https://www.paypal.com/nl/home" class="doneerknop">Doneer hier</a>
-
-    </footer>
+        <footer class="footer">
+            <div class="iconcontainer">
+                <a href="https://www.facebook.com/PartijvandeArbeid/?locale=nl_NL" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/PvdA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    class="fa fa-twitter"></a>
+                <a href="mailto:ledenadministratie@pvda.nl." class="fa fa-google"></a>
+            </div>
+            <p class="copyright">Copyright © 2023 PvdA</p>
+            <a href="https://www.paypal.com/nl/home" class="doneerknop">Doneer hier</a>
+        </footer>
     </div>
 
     </div>

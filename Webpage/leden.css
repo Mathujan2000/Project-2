@@ -48,6 +48,13 @@ footer {
 .containerleed{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+}
+
+.containerstandpunt{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #imgleden{
@@ -154,6 +161,19 @@ body.standpuntpage{
         justify-content: space-between;
         align-items: center;
     }
+
+    .containerstandpunt{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+    form{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
   
 }
 
@@ -188,4 +208,11 @@ body.standpuntpage{
         align-items: center;
         justify-items: center;
     }
+
+    form{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    
 }
