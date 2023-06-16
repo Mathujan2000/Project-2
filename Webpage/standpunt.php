@@ -52,7 +52,7 @@ $dbHandler = new dbHandler();
                 <a href="ledenadministratie@pvda.nl." class="fa fa-google"></a>
             </div>
             <p class="copyright">Copyright © 2023 PvdA</p>
-            <a href="https://www.paypal.com/nl/home" class="doneerknop">Doneer hier</a>
+            <a href="https://www.pvda.nl/doneren/" class="doneerknop">Doneer hier</a>
         </footer>
     </div>
 </body>
