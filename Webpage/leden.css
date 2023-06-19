@@ -26,7 +26,6 @@ a {
 }
 
 
-
 footer {
     display: grid;
     grid-area: footer;
@@ -84,7 +83,6 @@ body.standpuntpage{
 .sidenav {
     height: 100%;
     width: 100%;
-
     padding-top: 60px;
   }
   
@@ -97,9 +95,10 @@ body.standpuntpage{
  
   }
   
-  .sidenav a:hover {
-    color: #f1f1f1;
+  .sidenav a:hover{
+    color:red;
   }
+
   .fa {
     padding: 20px;
     font-size: 30px;

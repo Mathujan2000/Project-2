@@ -2,8 +2,13 @@
 include "./dbHandler.php";
 $db = new DbHandler();
 
-if (isset($_POST["create"])) {
-    $db->MaakGebruiker($_POST["naam"], $_POST["geboortedatum"], $_POST["email"]);
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST["create"])) {
+        $db->MaakGebruiker($_POST["naam"], $_POST["geboortedatum"], $_POST["email"]);
+    
+    }    
+    echo "<script>alert('Inschrijven is Gelukt!');</script>";
 }
 
 ?>
@@ -24,7 +29,7 @@ if (isset($_POST["create"])) {
             <h1>Inschrijven</h1>
         </header>
         <div id="logo">
-            <img src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo">
+            <a href="hoofdpagina.php"><img  src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo"></a>
         </div>
         <nav>
             <div class="sidenav">

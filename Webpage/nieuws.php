@@ -15,7 +15,7 @@
             <h1> Nieuwsoverzicht</h1>
         </header>
         <div id="logo">
-            <img src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo">
+            <a href="hoofdpagina.php"><img  src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo"></a>
         </div>
         <nav>
             <div class="sidenav">

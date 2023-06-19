@@ -19,7 +19,7 @@ $dbHandler = new dbHandler();
             <h1>Standpunt Pagina</h1>
         </header>
         <div id="logo">
-            <img src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo">
+            <a href="hoofdpagina.php"><img  src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo"></a>
         </div>
         <nav>
             <div class="sidenav">

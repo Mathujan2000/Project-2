@@ -20,7 +20,6 @@ body {
 
 .containernieuws {
     display: grid;
-    height: 100vh;
     grid-template-columns: 0.3fr 1fr 1fr;
     grid-template-rows: 0.4fr auto 0.4fr;
     grid-template-areas:
@@ -49,22 +48,49 @@ h1{
     text-align: center;
 }
 
-#calltoaction2 {
-  display: grid;
-  justify-items: center;
-  align-items: center;
+#calltoaction2,#calltoaction1{
+  -webkit-box-shadow: -2px -5px 66px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px -5px 66px -5px rgba(0,0,0,0.75);
+   box-shadow: -2px -5px 66px -5px rgba(0,0,0,0.75);
+   margin-left: 20px;
+   
+}
+#calltoaction1:hover img{
+  transform: scale(1.2);
+}
+
+#calltoaction2:hover img{
+  transform: scale(1.2);
 }
 
 #imagecontainer{
     display: grid;
     grid-area: imagecontainer;
     grid-template-columns: 1fr 1fr;
+    -webkit-box-shadow: -2px -5px 66px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -5px 66px -5px rgba(0,0,0,0.75);
+     box-shadow: -2px -5px 66px -5px rgba(0,0,0,0.75);
+     margin-left: 20px;
+     gap: 20px;
+}
+
+#imagecontainer:hover img{
+  transform: scale(1.2);
 }
 
 #nieuwscontainer {
     display: flex;
     grid-area: nieuwsbericht;
     justify-content: space-around;
+}
+
+.nieuws_item_container{
+  -webkit-box-shadow: -2px -5px 66px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px -5px 66px -5px rgba(0,0,0,0.75);
+   box-shadow: -2px -5px 66px -5px rgba(0,0,0,0.75);
+   margin-right: 20px;
+   margin-bottom: 20px;
+   
 }
 
 a {
@@ -83,6 +109,7 @@ a {
 .partijlogo {
     width: 15vw;
     height: 8.5vh;
+    object-fit: contain;
 }
 
 
@@ -94,14 +121,13 @@ a {
 
 .cafoto {
     width: 100%;
-    height: 100%;
+    height: 70%;
     object-fit: cover;
 
 }
-
 .cafoto2 {
     width: 100%;
-    height: 100%;
+    height: 70%;
     object-fit: cover;
 }
 
@@ -136,19 +162,21 @@ a {
   }
   
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: red;
   }
   
   .nb{
     width: 100%;
+    height: 60%;
     object-fit: cover;
   }
   .nb1 {
     width: 100%;
+    height: 80%;
   }
   .nb2 {
     width: 100%;
-    object-fit: cover;
+    height: 80%;
   }
   .fa {
     padding: 20px;
@@ -214,9 +242,45 @@ a {
     .container {
       /* Tablet-specific styles for container */
       display: grid;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr;
+      height: auto;
+      grid-template-columns: 0.3fr 1fr 1fr;
+      grid-template-rows: 0.4fr 1fr 1fr 0.4fr;
+      grid-template-areas:
+          "logo header header"
+          "nav calltoaction1 calltoaction2"
+          "nav imagecontainer imagecontainer"
+          "nav nieuwsbericht nieuwsbericht"
+          "footer footer footer";
     }
+
+    .containernieuws {
+      display: grid;
+      height: 100vhl;
+      grid-template-columns: 0.3fr 1fr 1fr;
+      grid-template-rows: 0.4fr auto 0.4fr;
+      grid-template-areas:
+          "logo header header"
+          "nav nieuws nieuws"
+          "nav nieuws nieuws"
+          "footer footer footer";
+  }
+  
+
+    .cafoto2,.cafoto {
+      width: 100%;
+      height: 70%;
+  }
+
+  .nb1,.nb2{
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .nieuwsbericht {
+    text-align: center;
+    color: red;
+    margin-bottom: 450px;
+}
 
   
 }
@@ -231,6 +295,7 @@ a {
     .container {
       /* Tablet-specific styles for container */
       display: grid;
+      height: 200ch;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr;
       grid-template-areas: 
@@ -246,6 +311,7 @@ a {
     .containernieuws {
       /* Tablet-specific styles for container */
       display: grid;
+      height: 100vh;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr;
       grid-template-areas: 
@@ -295,6 +361,11 @@ a {
         display: flex;
         flex-direction: column;
         grid-area: main3;
+        margin-bottom: 100px;
+    }
+
+    #nieuwsbericht{
+      margin-bottom: 100px;
     }
 
     #logo {
@@ -310,6 +381,12 @@ a {
       justify-content: center;
       height: 100%;
     }
+
+    .nieuwsbericht {
+      text-align: center;
+      color: red;
+      margin-bottom: 1px;
+  }
 
 
 }

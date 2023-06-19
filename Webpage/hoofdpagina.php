@@ -22,7 +22,7 @@ $db = new DbHandler();
 
         </header>
         <div id="logo">
-            <img src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo">
+            <a href="hoofdpagina.php"><img  src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo"></a>
         </div>
         <nav>
             <div class="sidenav">
@@ -31,7 +31,6 @@ $db = new DbHandler();
                 <a href="leden.php">Leden</a>
                 <a href="create.php">Inschrijven</a>
                 <a href="standpunt.php">Standpunten</a>
-
             </div>
         </nav>
         <div id="calltoaction1">
