@@ -10,7 +10,7 @@ final class dbHandler
         try {
             //Hier doe je grootendeels hetzelfde als bij SelectAll, echter selecteer je alleen alles uit de category tabel.
             $pdo = new PDO($this->dataSource, $this->username, $this->password);
-            $statement = $pdo->prepare("SELECT * FROM standpunt;");
+            $statement = $pdo->prepare("SELECT * FROM leden;");
             $statement->execute();
             return $statement->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $exception) {
@@ -26,8 +26,8 @@ final class dbHandler
             //Hier doe je grootendeels hetzelfde als bij SelectAll, echter selecteer je alleen alles uit de category tabel.
             $pdo = new PDO($this->dataSource, $this->username, $this->password);
             $statement = $pdo->prepare("SELECT * FROM `themas` 
-            JOIN standpunt ON themas.id = standpunt.thema_id
-            JOIN standputenv2 ON standputenv2.thema_id = standpunt.thema_id 
+            JOIN leden ON themas.id = leden.thema_id
+            JOIN standpunten ON standpunten.thema_id = leden.thema_id 
             WHERE themas.id = :id;");
             $statement->bindParam(':id', $id, PDO::PARAM_INT);
             $statement->execute();
