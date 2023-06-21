@@ -30,7 +30,7 @@ $db = new DbHandler();
                 <a href="nieuws.php">Nieuws</a>
                 <a href="leden.php">Leden</a>
                 <a href="create.php">Inschrijven</a>
-                <a href="standpunt.php">Standpunten</a>
+                <a href="themas.php">Thema</a>
             </div>
         </nav>
         <div id="calltoaction1">

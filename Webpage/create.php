@@ -33,10 +33,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <nav>
             <div class="sidenav">
-                <a href="hoofdpagina.php">Home</a>
+            <a href="hoofdpagina.php">Home</a>
                 <a href="nieuws.php">Nieuws</a>
-                <a href="leden.php">Leden</a>
-                <a href="standpunt.php">Standpunt</a>
+                <a href="themas.php">Thema</a>
+                <a href="infostand.php">Standpunten</a>
             </div>
         </nav>
         <div class="create">

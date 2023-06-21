@@ -1,6 +1,14 @@
 <?php
 include_once "./dbHandler.php";
 $dbHandler = new dbHandler();
+
+if (isset($_GET['id'])) {
+    $id_titel = $_GET['id'];
+    $thema = $dbHandler->selectThemas($id_titel);
+}
+
+
+//   $spunt = [];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,16 +18,16 @@ $dbHandler = new dbHandler();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="leden.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Standpunt</title>
+    <title>Leden</title>
 </head>
 
-<body class="standpuntpage">
-    <div class="containerleden">
+<body class="ledenpage">
+    <div class="containerst">
         <header>
-            <h1>Standpunt Pagina</h1>
+            <h1>Onze standpunten</h1>
         </header>
         <div id="logo">
-            <a href="hoofdpagina.php"><img  src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo"></a>
+            <a href="hoofdpagina.php"><img src="..//Webpage/images/pvda.png" alt="logo" class="partijlogo"></a>
         </div>
         <nav>
             <div class="sidenav">
@@ -27,28 +35,36 @@ $dbHandler = new dbHandler();
                 <a href="nieuws.php">Nieuws</a>
                 <a href="leden.php">Leden</a>
                 <a href="create.php">Inschrijven</a>
+                <a href="themas.php">Thema</a>
             </div>
         </nav>
         <div class="containerstandpunt">
             <?php
-            $leden = $dbHandler->selectCharacter();
-            foreach ($leden as $leed) {
-                ?>
-                <div id="leden">
+            $spunt = $dbHandler->selectThemas($id_titel);
+
+            foreach ($spunt as $spunten) {
+
+            ?>
+                <div class="standpunt">
                     <h2>
-                        <?= $leed['standpunt'] ?>
+                        <?= $spunten['titel'] ?>
                     </h2>
-                    <img id="imgleden" src="images/<?= $leed['standpunt'] ?>.png" alt="imgclass">
+                    <div id="tesktst">
+                    <p>
+                        <?= $spunten['tekst'] ?>
+                    </p>
+                    </div>
+                    <br>
+                    <img id="imgleden" src="images/<?= $spunten['standpunt'] ?>.png" alt="imgclass">
                 </div>
-                <?php
+            <?php
             }
             ?>
         </div>
         <footer>
             <div class="iconcontainer">
                 <a href="https://www.facebook.com/PartijvandeArbeid/?locale=nl_NL" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/PvdA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                    class="fa fa-twitter"></a>
+                <a href="https://twitter.com/PvdA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
                 <a href="ledenadministratie@pvda.nl." class="fa fa-google"></a>
             </div>
             <p class="copyright">Copyright © 2023 PvdA</p>

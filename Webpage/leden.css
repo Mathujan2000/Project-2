@@ -9,6 +9,17 @@
         "footer footer footer";
 }
 
+.containerst {
+  display: grid;
+  height: 105vh;
+  grid-template-columns: 0.1fr 1fr;
+  grid-template-rows: 0.4fr 1fr 0.2fr;
+  grid-template-areas:
+      "logo header"
+      "nav leden"
+      "footer footer";
+}
+
 header {
     display: grid;
     grid-area: header;
@@ -50,10 +61,30 @@ footer {
     align-items: flex-end;
 }
 
-.containerstandpunt{
+.containerthemas{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.containerstandpunt{
+  height: fit-content;
+  width: fit-content;
+  justify-self: center;
+  margin-bottom: 30px;
+  grid-area: leden;
+}
+
+
+.standpunt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: red;
+  -webkit-box-shadow: -2px -5px 66px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px -5px 66px -5px rgba(0,0,0,0.75);
+   box-shadow: -2px -5px 66px -5px rgba(0,0,0,0.75);
+  
 }
 
 #imgleden{
@@ -161,12 +192,17 @@ body.standpuntpage{
         align-items: center;
     }
 
-    .containerstandpunt{
+
+    .standpunt {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       align-items: center;
+      color: red;
+      -webkit-box-shadow: -2px -5px 66px -5px rgba(0,0,0,0.75);
+      -moz-box-shadow: -2px -5px 66px -5px rgba(0,0,0,0.75);
+      box-shadow: -2px -5px 66px -5px rgba(0,0,0,0.75);
   }
+    
 
     form{
       display: flex;

@@ -5,7 +5,7 @@ final class dbHandler
     private $username = "root";
     private $password = "";
 
-    public function selectCharacter()
+    public function selectall()
     {
         try {
             //Hier doe je grootendeels hetzelfde als bij SelectAll, echter selecteer je alleen alles uit de category tabel.
@@ -20,14 +20,14 @@ final class dbHandler
         }
     }
 
-    public function selectThema($id_titel)
+    public function selectThemas($id_titel)
     {
         try {
             //Hier doe je grootendeels hetzelfde als bij SelectAll, echter selecteer je alleen alles uit de category tabel.
             $pdo = new PDO($this->dataSource, $this->username, $this->password);
-            $statement = $pdo->prepare("SELECT * FROM verkiezingen.themas
-            join standpunt on themas.id = standpunt.thema_id;");
-            $statement->execute();
+            $statement = $pdo->prepare("SELECT * FROM `themas` JOIN standpunt ON themas.id = standpunt.thema_id WHERE themas.id = :id");
+        $statement->bindParam(':id', $id_titel, PDO::PARAM_INT);
+        $statement->execute();
             return $statement->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $exception) {
             //Indien er iets fout gaat kun je hier de exception var_dumpen om te achterhalen wat het probleem is.
@@ -35,6 +35,8 @@ final class dbHandler
             return false;
         }
     }
+
+
 
     public function MaakGebruiker(string $naam, string $geboortedatum, string $email)
     {
