@@ -3,12 +3,10 @@ include_once "./dbHandler.php";
 $dbHandler = new dbHandler();
 
 if (isset($_GET['id'])) {
-    $id_titel = $_GET['id'];
-    $thema = $dbHandler->selectThemas($id_titel);
+    $id = $_GET['id'];
+    $thema = $dbHandler->selectStandpunten($id);
 }
 
-
-//   $spunt = [];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,7 +38,7 @@ if (isset($_GET['id'])) {
         </nav>
         <div class="containerstandpunt">
             <?php
-            $spunt = $dbHandler->selectThemas($id_titel);
+            $spunt = $dbHandler->selectStandpunten($id);
 
             foreach ($spunt as $spunten) {
 
@@ -53,6 +51,13 @@ if (isset($_GET['id'])) {
                     <p>
                         <?= $spunten['tekst'] ?>
                     </p>
+                    </div>
+                    <div id="tesktstand">
+                        <ul>
+                            <li>
+                                <p> <?= $spunten['tekststandpunt'] ?></p>
+                            </li>
+                        </ul>
                     </div>
                     <br>
                     <img id="imgleden" src="images/<?= $spunten['standpunt'] ?>.png" alt="imgclass">

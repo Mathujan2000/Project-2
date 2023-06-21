@@ -27,20 +27,19 @@ $dbHandler = new dbHandler();
                 <a href="nieuws.php">Nieuws</a>
                 <a href="leden.php">Leden</a>
                 <a href="create.php">Inschrijven</a>
-                <a href="standpunten.php">Standpunten</a>
             </div>
         </nav>
         <div class="containerthemas">
             <?php
-            $leden = $dbHandler->selectall();
-            foreach ($leden as $leed) {
+            $themas = $dbHandler->selectall();
+            foreach ($themas as $thema) {
                 ?>
                 <div id="leden">
                     <h2>
-                    <a href="standpunten.php?id=<?= $leed['id'] ?>">
-                            <?= $leed['standpunt'] ?>
+                    <a href="standpunten.php?id=<?= $thema['id'] ?>">
+                            <?= $thema['standpunt'] ?>
                     </h2>
-                    <img id="imgleden" src="images/<?= $leed['standpunt'] ?>.png" alt="imgclass">
+                    <img id="imgthemas" src="images/<?= $thema['standpunt'] ?>.png" alt="imgclass">
                 </div>
                 <?php
             }

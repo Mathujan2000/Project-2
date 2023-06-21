@@ -24,7 +24,6 @@
                 <a href="leden.php">Leden</a>
                 <a href="create.php">Inschrijven</a>
                 <a href="themas.php">Thema</a>
-                <a href="standpunten.php">Standpunten</a>
             </div>
         </nav>
             <div class="nieuws_item_container">

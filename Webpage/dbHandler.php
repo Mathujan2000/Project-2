@@ -20,14 +20,17 @@ final class dbHandler
         }
     }
 
-    public function selectThemas($id_titel)
+    public function selectStandpunten($id)
     {
         try {
             //Hier doe je grootendeels hetzelfde als bij SelectAll, echter selecteer je alleen alles uit de category tabel.
             $pdo = new PDO($this->dataSource, $this->username, $this->password);
-            $statement = $pdo->prepare("SELECT * FROM `themas` JOIN standpunt ON themas.id = standpunt.thema_id WHERE themas.id = :id");
-        $statement->bindParam(':id', $id_titel, PDO::PARAM_INT);
-        $statement->execute();
+            $statement = $pdo->prepare("SELECT * FROM `themas` 
+            JOIN standpunt ON themas.id = standpunt.thema_id
+            JOIN standputenv2 ON standputenv2.thema_id = standpunt.thema_id 
+            WHERE themas.id = :id;");
+            $statement->bindParam(':id', $id, PDO::PARAM_INT);
+            $statement->execute();
             return $statement->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $exception) {
             //Indien er iets fout gaat kun je hier de exception var_dumpen om te achterhalen wat het probleem is.

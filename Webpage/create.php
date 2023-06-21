@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <a href="hoofdpagina.php">Home</a>
                 <a href="nieuws.php">Nieuws</a>
                 <a href="themas.php">Thema</a>
-                <a href="infostand.php">Standpunten</a>
+                <a href="leden.php">Leden</a>
             </div>
         </nav>
         <div class="create">
