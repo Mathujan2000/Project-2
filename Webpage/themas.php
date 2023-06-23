@@ -31,7 +31,7 @@ $dbHandler = new dbHandler();
         </nav>
         <div class="containerthemas">
             <?php
-            $themas = $dbHandler->selectall();
+            $themas = $dbHandler->selectleden();
             foreach ($themas as $thema) {
                 ?>
                 <div id="leden">

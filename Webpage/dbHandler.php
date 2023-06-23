@@ -5,7 +5,7 @@ final class dbHandler
     private $username = "root";
     private $password = "";
 
-    public function selectall()
+    public function selectleden()
     {
         try {
             //Hier doe je grootendeels hetzelfde als bij SelectAll, echter selecteer je alleen alles uit de category tabel.
@@ -20,7 +20,7 @@ final class dbHandler
         }
     }
 
-    public function selectStandpunten($id)
+    public function selectall($id)
     {
         try {
             //Hier doe je grootendeels hetzelfde als bij SelectAll, echter selecteer je alleen alles uit de category tabel.
@@ -44,9 +44,12 @@ final class dbHandler
     public function MaakGebruiker(string $naam, string $geboortedatum, string $email)
     {
         $pdo = new PDO($this->dataSource, $this->username, $this->password);
-
-        $statement = $pdo->prepare("INSERT INTO leden(naam,geboortedatum,email) VALUES(:naam, :geboortedatum, :email)");
-        $statement->bindParam("naam", $naam, PDO::PARAM_STR);
+        
+        $naam = strip_tags($naam);
+        $email = strip_tags($email);
+        $geboortedatum= strip_tags($geboortedatum);
+        $statement = $pdo->prepare("INSERT INTO createleden(naam,geboortedatum,email) VALUES(:naam, :geboortedatum, :email)");
+        $statement->bindParam("naam", $naam, PDO::PARAM_STR,);
         $statement->bindParam("geboortedatum", $geboortedatum, PDO::PARAM_STR);
         $statement->bindParam("email", $email, PDO::PARAM_STR);
         $statement->execute();

@@ -20,7 +20,6 @@
         <nav>
             <div class="sidenav">
                 <a href="hoofdpagina.php">Home</a>
-                <a href="nieuws.php">Nieuws</a>
                 <a href="leden.php">Leden</a>
                 <a href="create.php">Inschrijven</a>
                 <a href="themas.php">Thema</a>
