@@ -4,7 +4,7 @@ $dbHandler = new dbHandler();
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $thema = $dbHandler->selectStandpunten($id);
+    $thema = $dbHandler->selectall($id);
 }
 
 ?>
@@ -38,7 +38,7 @@ if (isset($_GET['id'])) {
         </nav>
         <div class="containerstandpunt">
             <?php
-            $spunt = $dbHandler->selectStandpunten($id);
+            $spunt = $dbHandler->selectall($id);
 
             foreach ($spunt as $spunten) {
 
@@ -66,7 +66,8 @@ if (isset($_GET['id'])) {
             }
             ?>
         </div>
-        <footer>
+    </div>
+    <footer>
             <div class="iconcontainer">
                 <a href="https://www.facebook.com/PartijvandeArbeid/?locale=nl_NL" class="fa fa-facebook"></a>
                 <a href="https://twitter.com/PvdA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
@@ -75,7 +76,6 @@ if (isset($_GET['id'])) {
             <p class="copyright">Copyright © 2023 PvdA</p>
             <a href="https://www.pvda.nl/doneren/" class="doneerknop">Doneer hier</a>
         </footer>
-    </div>
 </body>
 
 </html>

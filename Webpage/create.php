@@ -50,7 +50,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <button type="submit" name="create" value="create">Create</button>
             </form>
         </div>
-        <footer>
+    </div>
+
+    </div>
+    <footer>
             <div class="iconcontainer">
                 <a href="https://www.facebook.com/PartijvandeArbeid/?locale=nl_NL" class="fa fa-facebook"></a>
                 <a href="https://twitter.com/PvdA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
@@ -60,9 +63,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <p class="copyright">Copyright © 2023 PvdA</p>
             <a href="https://www.pvda.nl/doneren/" class="doneerknop">Doneer hier</a>
         </footer>
-    </div>
-
-    </div>
 </body>
 
 </html>

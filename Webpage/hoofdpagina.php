@@ -34,7 +34,7 @@ $db = new DbHandler();
         </nav>
         <div id="calltoaction1">
             <h1><a href="create.php">Schrijf je hier bij ons in!</a></h1>
-            <a href="create.php"> <img src="..//Webpage/images/meedoen.jpg" alt="meedoen" class="cafoto"></a>
+            <a href="create.php" class="ahref" > <img src="..//Webpage/images/meedoen.jpg" alt="meedoen" class="cafoto"></a>
         </div>
         <div id="calltoaction2">
             <h1><a href="leden.php">Bekijk hier onze leden!</a></h1>
