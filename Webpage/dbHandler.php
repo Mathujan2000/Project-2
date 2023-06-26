@@ -44,21 +44,12 @@ final class dbHandler
     public function MaakGebruiker(string $naam, string $geboortedatum, string $email)
     {
         $pdo = new PDO($this->dataSource, $this->username, $this->password);
-<<<<<<< HEAD
         $naam = strip_tags($naam);
         $geboortedatum = strip_tags($geboortedatum);
         $email = strip_tags($email);
         
         $statement = $pdo->prepare("INSERT INTO createleden(naam,geboortedatum,email) VALUES(:naam, :geboortedatum, :email)");
         $statement->bindParam("naam", $naam, PDO::PARAM_STR);
-=======
-        
-        $naam = strip_tags($naam);
-        $email = strip_tags($email);
-        $geboortedatum= strip_tags($geboortedatum);
-        $statement = $pdo->prepare("INSERT INTO createleden(naam,geboortedatum,email) VALUES(:naam, :geboortedatum, :email)");
-        $statement->bindParam("naam", $naam, PDO::PARAM_STR,);
->>>>>>> 80a8fe5e7158b83ed8f5573853aa2644a031e3f3
         $statement->bindParam("geboortedatum", $geboortedatum, PDO::PARAM_STR);
         $statement->bindParam("email", $email, PDO::PARAM_STR);
         $statement->execute();

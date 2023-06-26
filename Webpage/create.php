@@ -8,7 +8,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $db->MaakGebruiker($_POST["naam"], $_POST["geboortedatum"], $_POST["email"]);
     
     }    
-    echo "<script>alert('Inschrijven is Gelukt!');</script>";
 }
 
 ?>
@@ -40,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </nav>
         <div class="create">
-            <form method="POST" action="create.php">
+            <form method="POST" action="geluk.php">
                 <label for="naam">Naam:</label>
                 <input id="naam" name="naam" placeholder="naam" type="text" pattern="[A-Za-z]{3,50}" required />
                 <label for="geboortedatum">Geboortedatum:</label>

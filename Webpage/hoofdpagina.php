@@ -40,21 +40,19 @@ $db = new DbHandler();
             <h1><a href="leden.php">Bekijk hier onze leden!</a></h1>
             <a href="leden.php"><img src="../Webpage/images/leden.jpg" alt="leden" class="cafoto2"></a>
         </div>
-        <div id="imagecontainer">
-            <div>
+        <div id="itemcontainer1">
                 <a href="nieuws.php"><img src="../Webpage/images/nb1.jpg" alt="nb" class="nb1"></a>
                 <div id="nieuwsbericht">
                     <h3>Een fijne baan, plezier hebben met je collega’s en een bijdrage kunnen leveren.</h3>
                     <p>We vinden dat werk meer moet opleveren dan het eigen vermogen.</p>
                 </div>
-            </div>
-            <div>
+        </div>
+        <div id="itemcontainer2">
                 <a href="nieuws.php"><img src="../Webpage/images/nb2.jpg" alt="nb" class="nb2"></a>
                 <div id="nieuwsbericht1">
                     <h3>Goed en betaalbaar openbaar vervoer in héél Nederland</h3>
                     <p>We vinden dat het ov beter moet!.</p>
                 </div>
-            </div>
         </div>
         <footer class="footer">
             <div class="iconcontainer">
