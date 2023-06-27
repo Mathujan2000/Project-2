@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </nav>
         <div class="create">
-            <form method="POST" action="geluk.php">
+            <form method="POST" action="gelukt.php">
                 <label for="naam">Naam:</label>
                 <input id="naam" name="naam" placeholder="naam" type="text" pattern="[A-Za-z]{3,50}" required />
                 <label for="geboortedatum">Geboortedatum:</label>

@@ -76,9 +76,9 @@ footer {
 
 .containerthemas{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    
+    text-align: center;
 }
 
 .containerstandpunt{
@@ -220,16 +220,18 @@ body.standpuntpage{
     text-align: center;
     color: red;
   }
+  
   .doneerknop {
     grid-column: 3;
-    width: 10vw;
-    height: 5vh;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
     background-color: red;
     color: white;
-    margin-top: 2%;
-    justify-self: right;
     text-align: center;
     text-decoration: none;
+    justify-self: end;
   }
   .copyright {
     grid-column: 2;

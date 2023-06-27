@@ -45,12 +45,12 @@ $dbHandler = new dbHandler();
             ?>
         </div>
     </div>
-    <footer>
+    <footer class="footer">
             <div class="iconcontainer">
                 <a href="https://www.facebook.com/PartijvandeArbeid/?locale=nl_NL" class="fa fa-facebook"></a>
                 <a href="https://twitter.com/PvdA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
                     class="fa fa-twitter"></a>
-                <a href="ledenadministratie@pvda.nl." class="fa fa-google"></a>
+                <a href="mailto:ledenadministratie@pvda.nl." class="fa fa-google"></a>
             </div>
             <p class="copyright">Copyright © 2023 PvdA</p>
             <a href="https://www.pvda.nl/doneren/" class="doneerknop">Doneer hier</a>
